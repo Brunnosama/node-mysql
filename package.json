@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node_modules\\.bin\\mocha --reporter spec **/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,12 @@
   },
   "homepage": "https://github.com/Brunnosama/node-mysql#readme",
   "dependencies": {
+    "chai": "^4.3.6",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "mocha": "^10.0.0",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
     "sequelize": "^6.21.4",
     "sequelize-cli": "^6.4.1"
   }
